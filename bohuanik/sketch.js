@@ -19,7 +19,7 @@ const { createApp, ref } = Vue;
 const vm = Vue.createApp({
     data(){
       return {
-        datas : uhuanikData
+        datas : bohuanikData
       }
     }
   })
