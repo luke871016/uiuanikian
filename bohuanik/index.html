@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div id="">
+      <div v-for="data in datas">
+        <div class="subok">
+          <div class="hobe">{{data.num}}</div>
+          
+          <div class="han">
+            <div class="label">華語/外語</div>
+            <div class="subok-value">{{data.huagi}}<br>{{data.guagi}}</div>
+          </div>
+
+          <div class="tuiing">
+            <div class="label">註解</div>
+            <div class="subok-value">{{data.tsukai}}</div>
+          </div>
+
+         
+        </div>
+        <div class="uiuan">
+          <div class="ikian">
+            <div class="name">許慧如</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">莊佳穎</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">林佳怡</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">嚴立模</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">程俊源</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">何信翰</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">郭于中</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">徐寅榮</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">蘇世雄</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+          <div class="ikian">
+            <div class="name">盧廣誠</div>
+            <div class="phio" 
+              :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}">漢字台語音</div>
+            <ul>
+              <li> <b>婚外情／飼夥計／設緣投／偷咬雞仔</b> </li>
+              <li>hun-guā-tsîng/tshī-hué-kì/tshī-hé-kì/siat-iân-tâu/thau-kā-ke/kue-á</li>
+            </ul>
+            <p>雖然咱有講超越，毋過「越」佇口語有固定的意思，閣無文白會當區分，所以直接唸無一定較好</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./uhuanik.js"></script>
+    <script src="./sketch.js"></script>
+    
+  
+
+
+  </body>
+</html>
