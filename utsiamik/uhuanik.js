@@ -1,5 +1,4 @@
-let uhuanikData = 
-[
+let uhuanikData = [
   {
     "num": 1,
     "huagi": "明太子",
@@ -54,7 +53,7 @@ let uhuanikData =
     "phioSoo": "認同",
     "tsuSoo": "",
     "phioLoo": "認同",
-    "tsuLoo": "建議標音改做「hi̍k-tsú tsiâm-thíng」"
+    "tsuLoo": "建議標音改做「核子沬水艇hi̍k-tsú bī-tsuí-thíng」"
   },
   {
     "num": 3,
@@ -184,7 +183,7 @@ let uhuanikData =
     "phioGiam": "認同",
     "tsuGiam": "帕音phè",
     "phioThiann": "應討論",
-    "tsuThiann": "帕金森氏症Phè-kim-sim-tsìng（案：「症」字台語有咧用）",
+    "tsuThiann": "帕金森症Phè-kim-sim-tsìng（案：「症」字台語有咧用）",
     "phioHo": "認同",
     "tsuHo": "",
     "phioKueh": "認同",
@@ -334,7 +333,7 @@ let uhuanikData =
     "phioSoo": "認同",
     "tsuSoo": "iam-bâi",
     "phioLoo": "認同",
-    "tsuLoo": "「埋」標音愛改做「bâi」"
+    "tsuLoo": "用「埋tâi」就好"
   },
   {
     "num": 13,
@@ -596,34 +595,6 @@ let uhuanikData =
     "guagi": "",
     "tsukai": "",
     "phioKhoo": "應討論",
-    "tsuKhoo": "大隊接力",
-    "phioTsng": "應討論",
-    "tsuTsng": "",
-    "phioLim": "應討論",
-    "tsuLim": "大隊走標",
-    "phioGiam": "應討論",
-    "tsuGiam": "",
-    "phioThiann": "應討論",
-    "tsuThiann": "通討論",
-    "phioHo": "認同",
-    "tsuHo": "",
-    "phioKueh": "應討論",
-    "tsuKueh": "接棒走標tsiap-pāng-tsáu-pio",
-    "phioTshi": "應討論",
-    "tsuTshi": "",
-    "phioSoo": "反對",
-    "tsuSoo": "大隊接力 台語文音",
-    "phioLoo": "認同",
-    "tsuLoo": "建議標音改做suà-la̍t tsáu-pio"
-  },
-  {
-    "num": 23,
-    "huagi": "住宅區",
-    "taigiHan": "徛家區",
-    "taigiLo": "khiā-ke-khu",
-    "guagi": "",
-    "tsukai": "",
-    "phioKhoo": "應討論",
     "tsuKhoo": "住宅區 tsū-the̍h-khu",
     "phioTsng": "認同",
     "tsuTsng": "",
@@ -645,10 +616,10 @@ let uhuanikData =
     "tsuLoo": "建議照字講做「住宅區tsū-the̍h-ku」"
   },
   {
-    "num": 24,
-    "huagi": "偶蹄目",
-    "taigiHan": "偶蹄類",
-    "taigiLo": "ngóo-tê-luī",
+    "num": 23,
+    "huagi": "住宅區",
+    "taigiHan": "徛家區",
+    "taigiLo": "khiā-ke-khu",
     "guagi": "",
     "tsukai": "",
     "phioKhoo": "應討論",
@@ -673,10 +644,10 @@ let uhuanikData =
     "tsuLoo": "建議改做「雙蹄類 siang-tê-luī」"
   },
   {
-    "num": 25,
-    "huagi": "滅火器",
-    "taigiHan": "拍火罐",
-    "taigiLo": "phah-hué-kuàn",
+    "num": 24,
+    "huagi": "偶蹄目",
+    "taigiHan": "偶蹄類",
+    "taigiLo": "ngóo-tê-luī",
     "guagi": "",
     "tsukai": "",
     "phioKhoo": "認同",
@@ -699,6 +670,34 @@ let uhuanikData =
     "tsuSoo": "滅火器 沿用",
     "phioLoo": "應討論",
     "tsuLoo": "照字講做「bia̍t-hué/hé-khì」嘛真普遍"
+  },
+  {
+    "num": 25,
+    "huagi": "滅火器",
+    "taigiHan": "拍火罐",
+    "taigiLo": "phah-hué-kuàn",
+    "guagi": "",
+    "tsukai": "",
+    "phioKhoo": "應討論",
+    "tsuKhoo": "大隊接力",
+    "phioTsng": "應討論",
+    "tsuTsng": "",
+    "phioLim": "應討論",
+    "tsuLim": "大隊走標",
+    "phioGiam": "應討論",
+    "tsuGiam": "",
+    "phioThiann": "應討論",
+    "tsuThiann": "通討論",
+    "phioHo": "認同",
+    "tsuHo": "",
+    "phioKueh": "應討論",
+    "tsuKueh": "接棒走標tsiap-pāng-tsáu-pio",
+    "phioTshi": "應討論",
+    "tsuTshi": "",
+    "phioSoo": "反對",
+    "tsuSoo": "大隊接力 台語文音",
+    "phioLoo": "應討論",
+    "tsuLoo": "直接講做「大隊接力tuā-tuī tsiap-li̍k」"
   },
   {
     "num": 26,
@@ -866,7 +865,7 @@ let uhuanikData =
     "phioSoo": "反對",
     "tsuSoo": "窯烘pháng",
     "phioLoo": "應討論",
-    "tsuLoo": "建議改做「窯烘麵包 iô hang mī-pau」"
+    "tsuLoo": "建議改做「窯烘麵包／麭 iô hang mī-pau/pháng」"
   },
   {
     "num": 32,
