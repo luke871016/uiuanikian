@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>0213無翻譯的詞</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div v-for="data in datas">
+        <div class="subok">
+          <div class="hobe">{{data.num}}</div>
+          <div class="han">
+            <div class="label">華語/外語</div>
+            <div class="subok-value">{{data.huagi}}<br />{{data.guagi}}</div>
+            <div
+              class="luihing"
+              :class="{'yellow-bg':data.luihing=='字面有意思','blue-bg':data.luihing=='字面無意思'}"
+            >
+              {{data.luihing}}
+            </div>
+          </div>
+
+          <div class="tuiing">
+            <div class="label" v-if="data.tsukai">註解</div>
+            <div class="subok-value" v-if="data.tsukai">{{data.tsukai}}</div>
+          </div>
+        </div>
+        <div class="uiuan">
+          <div class="ikian">
+            <div class="name">許慧如</div>
+            <div
+              class="phio"
+              v-if="data.guantsikKhoo"
+              :class="{'yellow-bg': data.guantsikKhoo=='漢字台語音' ,
+            'blue-bg': data.guantsikKhoo=='新創詞',
+            'white-bg': data.guantsikKhoo!='漢字台語音' && data.guantsikKhoo!='新創詞'}"
+            >
+              {{data.guantsikKhoo}}
+            </div>
+            <ul>
+              <li v-if="data.hanKhoo"><b>{{data.hanKhoo}}</b></li>
+              <li v-if="data.loKhoo">{{data.loKhoo}}</li>
+            </ul>
+            <p v-if="data.tsuKhoo">{{data.tsuKhoo}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">莊佳穎</div>
+            <div
+              class="phio"
+              v-if="data.guantsikTsng"
+              :class="{'yellow-bg': data.guantsikTsng=='漢字台語音' ,
+            'blue-bg': data.guantsikTsng=='新創詞',
+            'white-bg': data.guantsikTsng!='漢字台語音' && data.guantsikTsng!='新創詞'}"
+            >
+              {{data.guantsikTsng}}
+            </div>
+            <ul>
+              <li v-if="data.hanTsng"><b>{{data.hanTsng}}</b></li>
+              <li v-if="data.loTsng">{{data.loTsng}}</li>
+            </ul>
+            <p v-if="data.tsuTsng">{{data.tsuTsng}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">林佳怡</div>
+            <div
+              class="phio"
+              v-if="data.guantsikLim"
+              :class="{'yellow-bg': data.guantsikLim=='漢字台語音' ,
+            'blue-bg': data.guantsikLim=='新創詞',
+            'white-bg': data.guantsikLim!='漢字台語音' && data.guantsikLim!='新創詞'}"
+            >
+              {{data.guantsikLim}}
+            </div>
+            <ul>
+              <li v-if="data.hanLim"><b>{{data.hanLim}}</b></li>
+              <li v-if="data.loLim">{{data.loLim}}</li>
+            </ul>
+            <p v-if="data.tsuLim">{{data.tsuLim}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">嚴立模</div>
+            <div
+              class="phio"
+              v-if="data.guantsikGiam"
+              :class="{'yellow-bg': data.guantsikGiam=='漢字台語音' ,
+            'blue-bg': data.guantsikGiam=='新創詞',
+            'white-bg': data.guantsikGiam!='漢字台語音' && data.guantsikGiam!='新創詞'}"
+            >
+              {{data.guantsikGiam}}
+            </div>
+            <ul>
+              <li v-if="data.hanGiam"><b>{{data.hanGiam}}</b></li>
+              <li v-if="data.loGiam">{{data.loGiam}}</li>
+            </ul>
+            <p v-if="data.tsuGiam">{{data.tsuGiam}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">程俊源</div>
+            <div
+              class="phio"
+              v-if="data.guantsikThiann"
+              :class="{'yellow-bg': data.guantsikThiann=='漢字台語音' ,
+            'blue-bg': data.guantsikThiann=='新創詞',
+            'white-bg': data.guantsikThiann!='漢字台語音' && data.guantsikThiann!='新創詞'}"
+            >
+              {{data.guantsikThiann}}
+            </div>
+            <ul>
+              <li v-if="data.hanThiann"><b>{{data.hanThiann}}</b></li>
+              <li v-if="data.loThiann">{{data.loThiann}}</li>
+            </ul>
+            <p v-if="data.tsuThiann">{{data.tsuThiann}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">何信翰</div>
+            <div
+              class="phio"
+              v-if="data.guantsikHo"
+              :class="{'yellow-bg': data.guantsikHo=='漢字台語音' ,
+            'blue-bg': data.guantsikHo=='新創詞',
+            'white-bg': data.guantsikHo!='漢字台語音' && data.guantsikHo!='新創詞'}"
+            >
+              {{data.guantsikHo}}
+            </div>
+            <ul>
+              <li v-if="data.hanHo"><b>{{data.hanHo}}</b></li>
+              <li v-if="data.loHo">{{data.loHo}}</li>
+            </ul>
+            <p v-if="data.tsuHo">{{data.tsuHo}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">郭于中</div>
+            <div
+              class="phio"
+              v-if="data.guantsikKueh"
+              :class="{'yellow-bg': data.guantsikKueh=='漢字台語音' ,
+            'blue-bg': data.guantsikKueh=='新創詞',
+            'white-bg': data.guantsikKueh!='漢字台語音' && data.guantsikKueh!='新創詞'}"
+            >
+              {{data.guantsikKueh}}
+            </div>
+            <ul>
+              <li v-if="data.hanKueh"><b>{{data.hanKueh}}</b></li>
+              <li v-if="data.loKueh">{{data.loKueh}}</li>
+            </ul>
+            <p v-if="data.tsuKueh">{{data.tsuKueh}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">徐榮寅</div>
+            <div
+              class="phio"
+              v-if="data.guantsikTshi"
+              :class="{'yellow-bg': data.guantsikTshi=='漢字台語音' ,
+            'blue-bg': data.guantsikTshi=='新創詞',
+            'white-bg': data.guantsikTshi!='漢字台語音' && data.guantsikTshi!='新創詞'}"
+            >
+              {{data.guantsikTshi}}
+            </div>
+            <ul>
+              <li v-if="data.hanTshi"><b>{{data.hanTshi}}</b></li>
+              <li v-if="data.loTshi">{{data.loTshi}}</li>
+            </ul>
+            <p v-if="data.tsuTshi">{{data.tsuTshi}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">蘇世雄</div>
+            <div
+              class="phio"
+              v-if="data.guantsikSoo"
+              :class="{'yellow-bg': data.guantsikSoo=='漢字台語音' ,
+            'blue-bg': data.guantsikSoo=='新創詞',
+            'white-bg': data.guantsikSoo!='漢字台語音' && data.guantsikSoo!='新創詞'}"
+            >
+              {{data.guantsikSoo}}
+            </div>
+            <ul>
+              <li v-if="data.hanSoo"><b>{{data.hanSoo}}</b></li>
+              <li v-if="data.loSoo">{{data.loSoo}}</li>
+            </ul>
+            <p v-if="data.tsuSoo">{{data.tsuSoo}}</p>
+          </div>
+          <div class="ikian">
+            <div class="name">盧廣誠</div>
+            <div
+              class="phio"
+              v-if="data.guantsikLoo"
+              :class="{'yellow-bg': data.guantsikLoo=='漢字台語音' ,
+            'blue-bg': data.guantsikLoo=='新創詞',
+            'white-bg': data.guantsikLoo!='漢字台語音' && data.guantsikLoo!='新創詞'}"
+            >
+              {{data.guantsikLoo}}
+            </div>
+            <ul>
+              <li v-if="data.hanLoo"><b>{{data.hanLoo}}</b></li>
+              <li v-if="data.loLoo">{{data.loLoo}}</li>
+            </ul>
+            <p v-if="data.tsuLoo">{{data.tsuLoo}}</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./bohuanik.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
