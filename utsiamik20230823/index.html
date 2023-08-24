@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>20230823第十一改委員會會議</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div v-for="data in datas">
+        <div class="subok">
+          <div class="hobe">{{data.num}}</div>
+          <div class="han">
+            <div class="label">漢字台文</div>
+            <div class="subok-value">{{data.taigiHan}}</div>
+          </div>
+
+          <div class="lomaji">
+            <div class="label">羅馬字台文</div>
+            <div class="subok-value">{{data.taigiLo}}</div>
+          </div>
+
+          <div class="tuiing">
+            <div class="label">華語/外語</div>
+            <div class="subok-value">{{data.huagi}}<br />{{data.guagi}}</div>
+            <div class="label tsukai">註解</div>
+            <div class="subok-value tsukai">{{data.tsukai}}</div>
+          </div>
+          <div class="tsukai"></div>
+          <div class="tholun">
+            <textarea :id="data.num" name="w3review" rows="4" cols="50">
+{{data.thoLun}}</textarea
+            >
+          </div>
+        </div>
+        <div class="uiuan">
+          <div class="ikian">
+            <div>
+              <div class="name">許慧如</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioKhoo=='應討論' ,
+              'red-bg': data.phioKhoo=='反對',
+                'green-bg': data.phioKhoo=='認同'}"
+                v-if="data.phioKhoo"
+              >
+                {{data.phioKhoo}}
+              </div>
+            </div>
+            <p>{{data.tsuKhoo}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">莊佳穎</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioTsng=='應討論' ,
+              'red-bg': data.phioTsng=='反對',
+                'green-bg': data.phioTsng=='認同'}"
+                v-if="data.phioTsng"
+              >
+                {{data.phioTsng}}
+              </div>
+            </div>
+            <p>{{data.tsuTsng}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">林佳怡</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioLim=='應討論' ,
+              'red-bg': data.phioLim=='反對',
+                'green-bg': data.phioLim=='認同'}"
+                v-if="data.phioLim"
+              >
+                {{data.phioLim}}
+              </div>
+            </div>
+            <p>{{data.tsuLim}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">嚴立模</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioGiam=='應討論' ,
+              'red-bg': data.phioGiam=='反對',
+                'green-bg': data.phioGiam=='認同'}"
+                v-if="data.phioGiam"
+              >
+                {{data.phioGiam}}
+              </div>
+            </div>
+            <p>{{data.tsuGiam}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">程俊源</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioThiann=='應討論' ,
+              'red-bg': data.phioThiann=='反對',
+                'green-bg': data.phioThiann=='認同'}"
+                v-if="data.phioThiann"
+              >
+                {{data.phioThiann}}
+              </div>
+            </div>
+            <p>{{data.tsuThiann}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">何信翰</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioHo=='應討論' ,
+              'red-bg': data.phioHo=='反對',
+                'green-bg': data.phioHo=='認同'}"
+                v-if="data.phioHo"
+              >
+                {{data.phioHo}}
+              </div>
+            </div>
+            <p>{{data.tsuHo}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">郭于中</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioKueh=='應討論' ,
+              'red-bg': data.phioKueh=='反對',
+                'green-bg': data.phioKueh=='認同'}"
+                v-if="data.phioKueh"
+              >
+                {{data.phioKueh}}
+              </div>
+            </div>
+            <p>{{data.tsuKueh}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">徐榮寅</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioTshi=='應討論' ,
+              'red-bg': data.phioTshi=='反對',
+                'green-bg': data.phioTshi=='認同'}"
+                v-if="data.phioTshi"
+              >
+                {{data.phioTshi}}
+              </div>
+            </div>
+            <p>{{data.tsuTshi}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">蘇世雄</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioSoo=='應討論' ,
+              'red-bg': data.phioSoo=='反對',
+                'green-bg': data.phioSoo=='認同'}"
+                v-if="data.phioSoo"
+              >
+                {{data.phioSoo}}
+              </div>
+            </div>
+            <p>{{data.tsuSoo}}</p>
+          </div>
+          <div class="ikian">
+            <div>
+              <div class="name">盧廣誠</div>
+              <div
+                class="phio"
+                :class="{'yellow-bg': data.phioLoo=='應討論' ,
+              'red-bg': data.phioLoo=='反對',
+                'green-bg': data.phioLoo=='認同'}"
+                v-if="data.phioLoo"
+              >
+                {{data.phioLoo}}
+              </div>
+            </div>
+            <p>{{data.tsuLoo}}</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <aside id="information-and-timer">
+      <div id="title">
+        <div class="date">20230608</div>
+        <input
+          type="time"
+          id="start-time"
+          name="start-time"
+          min="00:00"
+          max="24:00"
+          value="20:00"
+          required
+        />
+        <h2>
+          <span class="small">公視台語台新詞辭庫</span><br />第十一改委員會會議
+        </h2>
+      </div>
+      <div id="data">
+        <div class="data-block">
+          <h3 class="data-title">已經完成 ê 數量</h3>
+          <div id="count">0</div>
+          <button id="minus">-</button>
+          <button id="plus">+</button>
+        </div>
+        <div class="data-block">
+          <h3 class="data-title">平均一條 ê 時間</h3>
+          <div id="averge-time" class="time">00:00</div>
+        </div>
+        <div class="data-block">
+          <h3 class="data-title">目前 ê 詞討論偌久</h3>
+          <div id="time" class="time">00:00</div>
+          <button id="play">▶️</button>
+          <button id="reset">↻</button>
+        </div>
+        <button id="save">save</button>
+      </div>
+    </aside>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./uhuanik.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
